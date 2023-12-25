@@ -1,6 +1,66 @@
 {% extends 'index.html' %}
 {% load static %}
 {% block body %}
+
+<style>
+	/* CSS styles for the registration form */
+.logins {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 130vh;
+}
+
+.container {
+    /* background-color: #d0e9f4; */
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+    padding: 20px;
+}
+
+.title-section {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.btn-primary {
+    width: 20%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+	align-items: center;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.text-center {
+    text-align: center;
+
+}
+.login{
+	background-image: url("static\img\Blood Bank Transfusion Medicine.jpg")
+}
+
+</style>
 	<!-- register -->
 
 
@@ -8,7 +68,7 @@
 		<div class="container py-xl-5 py-lg-3">
 			<div class="title-section mb-md-5 mb-4">
 				<h6 class="w3ls-title-sub"></h6>
-				<h3 class="w3ls-title text-uppercase text-dark font-weight-bold">Register Now</h3>
+				<center><h3 class="w3ls-title text-uppercase text-dark font-weight-bold">Register Now</h3></center>
 			</div><hr/>
 			<div class="login px-sm-12" style="width:100%">
 				<form action="" method="post" enctype="multipart/form-data">
@@ -49,7 +109,7 @@
 						<input type="date" class="form-control" name="dob" placeholder="" required="">
 						</div>
 						<div class="col-md-6">
-						<label>Image</label>
+						<label>Upload Your Prescription</label>
 						<input type="file" class="form-control" name="image" required="">
 						</div>
 					</div>
@@ -73,7 +133,8 @@
 					</div>
 
 					</div>
-					<button type="submit" class="btn btn-primary submit mt-4">Register</button>
+					<center>
+					<button type="submit" class="btn btn-primary submit mt-4">Register</button></center>
 					<p class="text-center mt-5">
 						<a href="#">By clicking Register, I agree to your terms</a>
 					</p>
