@@ -3,7 +3,13 @@
 {% block body %}
 
 <style>
-	/* CSS styles for the registration form */
+	    /* CSS styles for the registration form */
+body {
+        /* Apply background image to the entire body */
+        background-image: url("{% static 'img/register.jpg' %}");
+        background-size: contain;
+    }
+
 .logins {
     display: flex;
     justify-content: center;
@@ -56,10 +62,6 @@
     text-align: center;
 
 }
-.login{
-	background-image: url("static\img\Blood Bank Transfusion Medicine.jpg")
-}
-
 </style>
 	<!-- register -->
 
@@ -136,11 +138,12 @@
 					<center>
 					<button type="submit" class="btn btn-primary submit mt-4">Register</button></center>
 					<p class="text-center mt-5">
-						<a href="#">By clicking Register, I agree to your terms</a>
+						<a href="#" style="color: black;"><B>By clicking Register, I agree to your terms</B></a>
 					</p>
 				</form>
 			</div>
 		</div>
+	</div>
 	</section>
 	<!-- //register -->
 
