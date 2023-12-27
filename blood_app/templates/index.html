@@ -89,7 +89,7 @@
       {% if request.user.is_staff %}
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="{% url 'admin_home' %}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'admin_home' %}">Home</a></li>
           <li class="dropdown"><a href="#"><span>Category</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="/add_category">Add Blood Category</a></li>
@@ -111,7 +111,7 @@
             
             <a href="#" class="appointment-btn scrollto" style="color: #fff;"><span class="d-none d-md-inline">Welcome,</span> {{request.user.username}} <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="{% url 'change_password' %}">Password</a></li>
+              <li><a href="{% url 'change_password' %}">Change Password</a></li>
               <li><a href="{% url 'logout' %}">Logout</a></li>
               
             </ul>
@@ -122,10 +122,10 @@
       {% elif request.user.is_authenticated %}
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="{% url 'home' %}">Home</a></li>
-          <li><a class="nav-link scrollto" href="/profile">My Detail</a></li>
-          <li><a class="nav-link scrollto" href="/my_order">My Order</a></li>
-          <li><a class="nav-link scrollto" href="/history">History</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'home' %}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'profile' %}">My Detail</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'my_order'%}">My Order</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'history' %}">History</a></li>
           
           <li class="dropdown"><a href="#"><span>Blood Donation</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -137,7 +137,7 @@
           <li class="dropdown"><a href="#"><span>Hello,{{request.user.username}}</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               
-              <li><a href="{% url 'change_password' %}">Password</a></li>
+              <li><a href="{% url 'change_password' %}">Change Password</a></li>
               <li><a href="{% url 'logout' %}">Logout</a></li>
               
             </ul>
