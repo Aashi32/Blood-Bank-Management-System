@@ -970,7 +970,7 @@ section {
 # Services
 --------------------------------------------------------------*/
 
-.services .icon-box {
+/* .services .icon-box {
     text-align: center;
     border: 1px solid #d5e1ed;
     padding: 80px 20px;
@@ -1045,7 +1045,94 @@ section {
 .services .icon-box:hover h4 a,
 .services .icon-box:hover p {
     color: #fff;
-}
+} */
+
+/* ======= Hospitals Section ======= */
+
+/* Container Styles */
+.hospitals {
+    padding: 80px 0; /* Adjust the padding as needed */
+  }
+  
+  /* Section Title Styles */
+  .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .section-title p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Hospital Box Styles */
+  .hospital-box {
+    text-align: center;
+    border: 1px solid #ddd; /* Light border color */
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+  }
+  
+  .hospital-box:hover {
+    border-color: #1977cc; /* Highlight border color on hover */
+  }
+  
+  /* Hospital Image Container Styles */
+  .hospital-img-container {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+  
+  .hospital-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Add border-radius for rounded corners */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hospital Title Styles */
+  .hospital-box h4 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .hospital-box h4 a {
+    color: #1977cc;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .hospital-box h4 a:hover {
+    color: #333;
+  }
+  
+  /* Hospital Description Styles */
+  .hospital-box p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hospital-img-container {
+      height: 150px; /* Adjust the height for smaller screens */
+    }
+  
+    .hospital-box {
+      margin-bottom: 30px;
+    }
+  }
+  
 
 
 /*--------------------------------------------------------------
