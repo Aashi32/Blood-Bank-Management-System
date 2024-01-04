@@ -9,7 +9,7 @@ This module focuses on the donor, acceptor, blood bank. Each member in the donor
 <b>User Module:</b: <br>
 Each member in a donor is given a user id and password, which identifies him uniquely. The member is given a login form. He enters the login details user id and password. <br>
 <li>
-    <ul><b>Acceptor Module:</b<br></ul>
+    <ul><b>Acceptor Module:</b></ul>
 This module contains the information about the acceptor. This module manages the acceptor information. Each member in the acceptor is given a user id and password, which identifies him uniquely. <br>
 </li>
 
