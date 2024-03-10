@@ -14,3 +14,19 @@ This module contains the information about the acceptor. This module manages the
 
 ## To clone this repository:<br>
 git clone -b master https://github.com/Aashi32/Blood-Bank-Management-System.git
+
+## 1. Navigate to the project directory:
+cd Blood-Bank-Management-System
+
+## 2. Install Django 
+pip install django
+
+## 3. Run migrations to create the database schema:
+python manage.py migrate
+
+## 4. Start the development server:
+python manage.py runserver
+
+## 5. Access the application in your web browser at http://127.0.0.1:8000/.
+
+
